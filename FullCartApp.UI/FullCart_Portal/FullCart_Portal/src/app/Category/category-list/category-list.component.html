@@ -1,0 +1,20 @@
+<a class="btn btn-primary"  href="#/category/add">Add new </a>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>ImageUrl</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of dataSource">
+      <td>{{ item.id }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.imageUrl }}</td>
+      <td><button class="btn btn-primary" (click)="openModal(item)">Edit</button></td>
+      <td><button class="btn btn-primary" (click)="Deleteitem(item)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
+
