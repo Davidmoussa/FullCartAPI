@@ -10,6 +10,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AgGridModule } from '@ag-grid-community/angular';
 import { ProductAddOrUpdateComponent } from './product-add-or-update/product-add-or-update.component';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { ProductShopComponent } from './product-shop/product-shop.component';
+import { ProductCarComponent } from './product-car/product-car.component';
 
 
 
@@ -32,7 +35,10 @@ export const ProductRoutes: Routes = [
 @NgModule({
   declarations: [
     ProductListComponent,
-    ProductAddOrUpdateComponent
+    ProductAddOrUpdateComponent,
+    ProductCardComponent,
+    ProductShopComponent,
+    ProductCarComponent
   ],
   imports: [
     BrowserModule,

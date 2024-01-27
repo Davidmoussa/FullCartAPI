@@ -93,6 +93,7 @@ namespace FullCartApp.CompositionRoot
             services.AddScoped<ICategoryService,CategoryService>();
             services.AddScoped<IProductService,ProductService>();
             services.AddScoped<IAccountService,AccountService>();
+            services.AddScoped<IOrderService, OrderService>();
         }
 
         private static void RegisterPersistence(IConfiguration configuration, IServiceCollection services)
@@ -111,6 +112,8 @@ namespace FullCartApp.CompositionRoot
             services.AddScoped<ProductMapper>();
             services.AddScoped<CategoryMapper>();
             services.AddScoped<ProfleMapper>();
+            services.AddScoped<OrderItemMapper>();
+            services.AddScoped<OrderMapper>();
 
 
         }

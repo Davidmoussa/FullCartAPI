@@ -14,6 +14,7 @@ import { CategoryListComponent } from './Category/category-list/category-list.co
 import { CategoryAddOrUpdateComponent } from './Category/category-add-or-update/category-add-or-update.component';
 import { LoginComponent } from './Account/login/login.component';
 import { RegisterComponent } from './Account/register/register.component';
+import { ProductCardComponent } from './Product/product-card/product-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { RegisterComponent } from './Account/register/register.component';
 
     CategoryAddOrUpdateComponent,
      LoginComponent,
-     RegisterComponent
+     RegisterComponent,
+
   ],
   imports: [
     BrowserModule,

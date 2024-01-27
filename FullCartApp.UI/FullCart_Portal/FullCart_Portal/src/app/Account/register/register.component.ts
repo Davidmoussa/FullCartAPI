@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit {
       if(res.data){
         localStorage.setItem('Profile',res.data );
         localStorage.setItem('isLoggedIn',"true");
-        this.router.navigate(['/'])
+        this.router.navigate(['/product'])
       }
 
     })

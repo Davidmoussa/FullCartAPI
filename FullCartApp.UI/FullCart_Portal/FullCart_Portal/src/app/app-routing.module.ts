@@ -9,12 +9,15 @@ import { CategoryAddOrUpdateComponent } from './Category/category-add-or-update/
 import { LoginComponent } from './Account/login/login.component';
 import { AuthGuard } from './Account/AuthGuard';
 import { RegisterComponent } from './Account/register/register.component';
+import { ProductShopComponent } from './Product/product-shop/product-shop.component';
+import { ProductCarComponent } from './Product/product-car/product-car.component';
 
 const routes: Routes = [
   {
     path: `${ProductRoute.baseRoute}`,
     children:[
-      { path: ``, component:ProductListComponent },
+      { path: ``, component:ProductShopComponent },
+      { path: `car`, component:ProductCarComponent },
       { path: `${ProductRoute.listRoute}`, component:ProductListComponent ,canActivate: [AuthGuard]},
       { path: `${ProductRoute.addRoute}`, component:ProductAddOrUpdateComponent,canActivate: [AuthGuard] },
       { path: `${ProductRoute.editRoute}/:id`, component:ProductAddOrUpdateComponent ,canActivate: [AuthGuard]},

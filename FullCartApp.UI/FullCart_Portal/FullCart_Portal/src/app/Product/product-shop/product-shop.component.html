@@ -1,0 +1,14 @@
+<style>
+  .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+</style>
+
+<div class="product-list">
+
+          <app-product-card  *ngFor="let p of dataSource"  [productmodel]="p"></app-product-card>
+
+
+</div>

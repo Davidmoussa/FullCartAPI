@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
         console.log(res.date);
         localStorage.setItem('Profile',res.data );
         localStorage.setItem('isLoggedIn',"true");
-        this.router.navigate(['/'])
+        this.router.navigate(['/product'])
       }
     })
   }

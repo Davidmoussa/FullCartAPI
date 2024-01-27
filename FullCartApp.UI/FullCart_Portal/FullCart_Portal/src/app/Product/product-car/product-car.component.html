@@ -1,0 +1,44 @@
+<style>
+  .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+</style>
+
+<div class="product-list">
+  <div *ngFor="let p of Products" class="product-card">
+    <img [src]="p.imageUrl" alt="{{ p.name }}">
+    <h3>{{ p.name }}</h3>
+    <p>{{ p.description }}</p>
+    <p>Price: ${{ p.price }}</p>
+  </div>
+</div>
